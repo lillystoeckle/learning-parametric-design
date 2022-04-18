@@ -4,14 +4,17 @@ let color3;
 let color4;
 
 function setup() {
-  color1 = color(random(100, 150), 50, 50);
-  color2 = color(random(100, 150), 50, 50);
-  color3 = color(random(100, 150), 50, 50);
-  color4 = color(random(100, 150), 50, 50);
-  createCanvas(400,400);
 }
 
 function draw(){
+
+  color1 = color(random(200, 60), 255, 50);
+  color2 = color(random(255, 50), 20, 255);
+  color3 = color(random(50, 255), 255, 50);
+  color4 = color(random(50, 200), 70, 255);
+  createCanvas(400,400);
+
+
   background(255);
 
   noStroke();
