@@ -11,8 +11,8 @@ this will save an SVG file in your download folder
 
 var cnv;
 
-var wid = 500;
-var hei = 300;
+var wid = 400;
+var hei = 400;
 
 var NB_FRAMES = 100;
 
