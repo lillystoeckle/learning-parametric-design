@@ -29,7 +29,7 @@ this will save an SVG file in your download folder
     function setup() {
       createCanvas(wid,hei);
 
-      textInput = createInput('background color');
+      textInput = createInput('strokeWeight');
       textInput.position(10, 410);
       textInput.size(50);
     }
