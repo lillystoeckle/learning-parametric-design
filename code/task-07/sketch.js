@@ -17,21 +17,16 @@ this will save an SVG file in your download folder
     var NB_FRAMES = 100;
     
     var frame_count = 0;
-
+    
     function activation(t) {
         return ((1-cos(2*PI*t))/2)**1;
     }
     
     const lines = [];
     
-    let textInput;
     
     function setup() {
       createCanvas(wid,hei);
-
-      textInput = createInput('strokeWeight');
-      textInput.position(10, 410);
-      textInput.size(50);
     }
     
     
@@ -58,8 +53,7 @@ this will save an SVG file in your download folder
           var turn = lerp(0,0.4,activation((i/NB+0*t)%1));
           
           stroke(255);
-          strokeWeight(0.5);
-          // strokeWeight(textInput.value());
+          strokeWeight(0.2);
           noFill();
           beginShape();
           

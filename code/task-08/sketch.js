@@ -5,9 +5,15 @@ see -https://github.com/zenozeng/p5.js-svg
 this will save an SVG file in your download folder
 */
 
+//ALLES NUR KOPIERT!!
 
-    //ALLES NUR KOPIERT!!
 
+
+    //inputs
+    let selectInput;
+    let slider;
+    let textSlider = 'slider';
+    let textArrows = 'speed, i am speed. (arrow keys)';
 
     var cnv;
 
@@ -17,16 +23,35 @@ this will save an SVG file in your download folder
     var NB_FRAMES = 100;
     
     var frame_count = 0;
-    
+
+    //colorValues
+    let r = 255;
+    let g = 0;
+    let b = 0;
+
+
+    //Preload
+    function preload(){
+      //preload assets
+    }
+
+
     function activation(t) {
         return ((1-cos(2*PI*t))/2)**1;
     }
     
+  
     const lines = [];
     
     
+    //Setup
     function setup() {
-      createCanvas(wid,hei);
+      createCanvas(wid,hei); 
+
+      //Slider
+      slider = createSlider(0.1, 100, 50, 10);
+      slider.position (10, 440);
+      slider.size (138);
     }
     
     
@@ -53,7 +78,7 @@ this will save an SVG file in your download folder
           var turn = lerp(0,0.4,activation((i/NB+0*t)%1));
           
           stroke(255);
-          strokeWeight(0.2);
+          strokeWeight(0.5);
           noFill();
           beginShape();
           
