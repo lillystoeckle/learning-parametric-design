@@ -5,6 +5,10 @@ see -https://github.com/zenozeng/p5.js-svg
 this will save an SVG file in your download folder
 */
 
+
+//Fragen 1: Bei bestimmter Farbe Starten?
+//Frage 2: Warum RGB Werte nicht sichtbar?
+
     var cnv;
 
     var wid = 400;
