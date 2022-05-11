@@ -7,14 +7,6 @@ this will save an SVG file in your download folder
 
 //ALLES NUR KOPIERT!!
 
-
-
-    //inputs
-    let selectInput;
-    let slider;
-    let textSlider = 'slider';
-    let textArrows = 'speed, i am speed. (arrow keys)';
-
     var cnv;
 
     var wid = 400;
@@ -24,10 +16,7 @@ this will save an SVG file in your download folder
     
     var frame_count = 0;
 
-    //colorValues
-    let r = 255;
-    let g = 0;
-    let b = 0;
+    var slider1, slider2, slider3;
 
 
     //Preload
@@ -46,19 +35,40 @@ this will save an SVG file in your download folder
     
     //Setup
     function setup() {
-      createCanvas(wid,hei); 
+      createCanvas(wid,hei);
+      
+      // create some sliders
+      slider1 = createSlider(0, 255, 0);
+      slider1.position(10, 10);
 
-      //Slider
-      slider = createSlider(0.1, 100, 50, 10);
-      slider.position (10, 440);
-      slider.size (138);
+      slider2 = createSlider(0, 255, 0);
+      slider2.position(10, 30);
+
+      slider3 = createSlider(0, 255, 0);
+      slider3.position(10, 50);
+
+      // text color is white
+      fill('white');
     }
     
     
     var NB = 100;
     
     function draw() {
-      background(0);
+      background(192, 173, 247);
+
+      // color screen with slider values
+      // background(r, g, b);
+
+      // get value of sliders
+      var r = slider1.value();
+      var g = slider2.value();
+      var b = slider3.value();
+
+      // print text
+      text('R: '+r,150,25);
+      text('G: '+g,150,45);
+      text('B: '+b,150,65);
         
       var t = ((frame_count)%NB_FRAMES)/NB_FRAMES;
         
