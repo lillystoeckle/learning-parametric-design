@@ -5,8 +5,6 @@ see -https://github.com/zenozeng/p5.js-svg
 this will save an SVG file in your download folder
 */
 
-//ALLES NUR KOPIERT!!
-
     var cnv;
 
     var wid = 400;
