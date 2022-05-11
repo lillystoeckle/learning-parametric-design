@@ -40,13 +40,13 @@ this will save an SVG file in your download folder
       createCanvas(wid,hei);
       
       // create some sliders
-      slider1 = createSlider(0, 255, 0);
+      slider1 = createSlider(0, 255, 183);
       slider1.position(10, 10);
 
-      slider2 = createSlider(0, 255, 0);
+      slider2 = createSlider(0, 255, 190);
       slider2.position(10, 30);
 
-      slider3 = createSlider(0, 255, 0);
+      slider3 = createSlider(0, 255, 220);
       slider3.position(10, 50);
 
       // text color is white
@@ -63,13 +63,13 @@ this will save an SVG file in your download folder
       var g = slider2.value();
       var b = slider3.value();
 
+      // color screen with slider values
+      background(r, g, b);
+
       // print text
       text('R: '+r,150,25);
       text('G: '+g,150,45);
       text('B: '+b,150,65);
-
-      // color screen with slider values
-      background(r, g, b);
         
       var t = ((frame_count)%NB_FRAMES)/NB_FRAMES;
         
