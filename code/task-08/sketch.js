@@ -53,10 +53,6 @@ this will save an SVG file in your download folder
     var NB = 100;
     
     function draw() {
-      background(192, 173, 247);
-
-      // color screen with slider values
-      // background(r, g, b);
 
       // get value of sliders
       var r = slider1.value();
@@ -67,6 +63,9 @@ this will save an SVG file in your download folder
       text('R: '+r,150,25);
       text('G: '+g,150,45);
       text('B: '+b,150,65);
+
+      // color screen with slider values
+      background(r, g, b);
         
       var t = ((frame_count)%NB_FRAMES)/NB_FRAMES;
         
