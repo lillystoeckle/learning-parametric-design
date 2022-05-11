@@ -40,13 +40,13 @@ this will save an SVG file in your download folder
       createCanvas(wid,hei);
       
       // create some sliders
-      slider1 = createSlider(0, 255, 183);
+      slider1 = createSlider(0, 255, 165);
       slider1.position(10, 10);
 
-      slider2 = createSlider(0, 255, 190);
+      slider2 = createSlider(0, 255, 165);
       slider2.position(10, 30);
 
-      slider3 = createSlider(0, 255, 220);
+      slider3 = createSlider(0, 255, 255);
       slider3.position(10, 50);
 
       // text color is white
